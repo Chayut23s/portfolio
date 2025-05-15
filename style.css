@@ -1,0 +1,323 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* Container for layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation Bar */
+header {
+  background-color: #3351A6; /* สีพื้นหลังน้ำเงิน */
+  padding: 5px 0;  /* กำหนด padding ที่เหมือนกัน */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;  /* จัดตำแหน่งข้อความให้ซ้ายสุดและเมนูให้ขวาสุด */
+  align-items: center;
+  padding: 0 20px; /* เพิ่ม padding ที่เท่ากัน */
+}
+
+.navbar .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* ทำให้โลโก้และเมนูไปคนละด้าน */
+  align-items: center;
+  width: 100%; /* ให้ container ใช้ความกว้างเต็ม */
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; /* ทำให้เมนูไปอยู่ขวาสุด */
+}
+
+.nav-links li {
+  margin-left: 30px; /* ระยะห่างระหว่างเมนู */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #F0112B; /* เปลี่ยนสีเมื่อ hover */
+}
+
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  background-color: #000;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+
+/* About Section */
+.about {
+  background-color: #000;
+  color: white;
+  padding: 40px 20px;
+  
+}
+
+/* Layout of About section */
+.about-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+/* About Image */
+.about-image {
+  flex: 1;
+  max-width: 500px; /* ขนาดสูงสุดของรูปภาพ */
+  margin-right: 40px;
+}
+
+/* Ensure the image is responsive */
+.about-img {
+  width: 100%; /* ขยายให้เต็มขนาดพื้นที่ที่กำหนด */
+  height: auto; /* ไม่ให้ภาพยืดหรือหด */
+}
+
+/* About info */
+.about-info {
+  flex: 2;
+  max-width: 600px;
+  text-align: left;
+}
+
+.about-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-info p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+/* For Contact Info */
+.about-details p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.about-details a {
+  color: #F0112B;
+  text-decoration: none;
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: #F0112B;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #e00a24;
+}
+
+/* Projects Section */
+.projects {
+  background-color: #000;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background-color: #dedede;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #222;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Footer Section */
+footer {
+  background-color: #3351A6;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #F0112B;
+}
+
+/* Project Detail Section */
+.project-detail {
+  max-width: 1000px;  /* กำหนดความกว้างสูงสุด */
+  margin: 90px auto 20px;  /* จัดให้อยู่กลาง */
+  padding: 20px;  /* เพิ่ม padding ภายใน */
+  background-color: #dedede;  /* สีพื้นหลัง */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);  /* เพิ่มเงา */
+  display: flex;
+  flex-direction: column;  /* จัดให้เนื้อหาภายในเป็นคอลัมน์ */
+  align-items: center;  /* จัดให้อยู่กลาง */
+}
+
+/* ปรับขนาดของรูปภาพใน Project Detail */
+.project-detail img {
+  width: 100%;  /* ให้รูปภาพขยายเต็มความกว้าง */
+  max-width: 800px;  /* จำกัดขนาดสูงสุดของรูปภาพ */
+  height: auto;  /* ให้ความสูงปรับอัตโนมัติ */
+  margin: 0 auto 20px;  /* จัดตำแหน่งให้กลาง */
+  display: block;
+}
+
+/* เพิ่มความยืดหยุ่นในการจัดข้อความ */
+.project-detail h2 {
+  font-size: 2rem;  /* ขนาดตัวอักษร */
+  margin-bottom: 20px;  /* ระยะห่างด้านล่าง */
+}
+
+/* เพิ่มความยืดหยุ่นในการจัดข้อความ */
+.project-detail h3 {
+  font-size: 1.5rem;  /* ขนาดตัวอักษร */
+  margin-bottom: 20px;  /* ระยะห่างด้านล่าง */
+}
+
+.project-detail p {
+  font-size: 1rem;  /* ขนาดข้อความ */
+  line-height: 1.6;
+  margin-bottom: 20px;  /* ระยะห่างระหว่างย่อหน้า */
+  text-align: justify; 
+}
+
+.project-detail ul li {
+  line-height: 1.6;    /* เพิ่มระยะห่างระหว่างบรรทัด */
+}
+.project-detail video {
+  width: 100%;  /* ให้วิดีโอขยายเต็มความกว้าง */
+  max-width: 800px;  /* ขนาดวิดีโอสูงสุด */
+  margin: 20px auto;  /* จัดให้อยู่กลาง */
+  display: block;
+}
+
+
+/* Image Slider Container */
+.image-slider {
+  position: relative;
+  overflow: hidden; /* ซ่อนเนื้อหาที่เกินขอบ */
+}
+
+/* Slider Container */
+.slider-container {
+  display: flex;
+  transition: transform 2s ease;
+}
+
+/* สไลด์ */
+.slide {
+  min-width: 100%;
+}
+
+/* Navigation buttons */
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10; /* ให้ปุ่มอยู่ด้านหน้าสุด */
+}
+
+button.prev {
+  left: 10px; /* ปุ่มย้อนกลับอยู่ทางซ้าย */
+}
+
+button.next {
+  right: 10px; /* ปุ่มไปข้างหน้าจะอยู่ทางขวา */
+}
+
+
+
